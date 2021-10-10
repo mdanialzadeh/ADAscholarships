@@ -1,0 +1,86 @@
+
+body {
+    height: 100%;
+    margin: 0;
+    background-color: rgba(122, 115, 96, 0.103);
+    font-family: 'Sarabun', sans-serif;
+    font-size: 18px;
+    background-image: url(source/photo_2021-10-09_12-39-17.jpg);
+}
+
+button {
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border:none;
+    font-size: 1em;
+}
+
+button:hover {
+    color: rgb(129 52 163);
+    transform:translateY(1px)
+}
+
+.y.mandatory-scroll-snapping {
+    scroll-snap-type: y mandatory;
+  }
+
+.navbar {
+    background-color: rgb(255, 255, 255);
+    height:3em;
+    position: sticky;
+    margin-top: 1em;
+    top: 0;
+    color: rgb(129 52 163);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2em;
+    box-shadow: 1px 1px 5px 5px  white;
+}
+
+.logo {
+    font-size: 1.3em;
+    font-weight: bolder;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.main_page {
+    height: 100%;
+}
+
+.about {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+
+.NFT_page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.NFT_Whales {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    background-color: rgba(255, 255, 255, 0.884);
+    width: 70%;
+    padding: 1.4em;
+    border-radius: 3em;
+    box-shadow: 1px 1px 30px 15px rgb(0, 0, 0);
+    border: 2px solid rgba(0, 0, 0, 0.164);
+    font-size: 1.1em;
+}
