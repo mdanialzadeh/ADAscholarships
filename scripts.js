@@ -14,11 +14,15 @@ function buttons () {
 })
 
 navButtons[2].addEventListener('click', () => {
-    NFTs.scrollIntoView({behavior: "smooth"})
+    hre
 })
 
 navButtons[3].addEventListener('click', () => {
     NFTwhales.scrollIntoView({behavior: "smooth"})
+})
+
+navButtons[4].addEventListener('click', () => {
+    NFTs.scrollIntoView({behavior: "smooth"})
 })
 
 }
