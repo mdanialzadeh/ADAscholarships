@@ -3,7 +3,7 @@ const pre_register = document.querySelector(".pre_register")
 const navButtons = document.querySelectorAll("button")
 const scriptURL = 'https://script.google.com/macros/s/AKfycbxrbw8A_7ep-TUgjgZECnFQThPjhNaXrYvL0AHCwtHXUPdcmxHE/exec'
 const form = document.getElementById("preRegister")
-
+const form_results = document.querySelector(".email_result")
 
 function buttons () {
     
@@ -19,6 +19,9 @@ navButtons[1].addEventListener('click', () => {
 
 buttons ()
 
+function emailResult () {
+    form_results.innerHTML = "Succes! thank you for Preregistering"
+}
 
 form.addEventListener('submit', e => {
   e.preventDefault()
@@ -27,6 +30,7 @@ form.addEventListener('submit', e => {
     .then(response => {
         console.log('Success!', response)
         form.reset();
+        emailResult()
         })
     .catch(error => console.error('Error!', error.message))
 })

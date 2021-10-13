@@ -5,7 +5,7 @@ html {
     font-family: 'Sarabun', sans-serif;
     font-size: 18px;
     background-size:100% 100%;
-    background-image: url("source/New Folder/Queen.jpg") ;
+    background-image: url("source/New Folder/Knight.jpg") ;
     background-repeat: no-repeat;
     width: 100vw;
 }
@@ -19,6 +19,7 @@ height: 100vh;
 justify-content: space-evenly;
 align-items: center;
 }
+
 
 a {
     text-decoration: inherit;
@@ -89,7 +90,20 @@ button:focus {
     max-width: 40em;
 }
 
-.NFT_page {
+.container {
+    background-color: rgba(255, 255, 255, 0.25);
+    background-blend-mode: color-dodge;
+    backdrop-filter: blur(25px);
+    width: 100%;
+    padding: 1.4em;
+    border-radius: 3em;
+    box-shadow: 2px 2px 25px 20px outset rgb(0, 0, 0);
+    border: 2px solid rgb(61, 60, 60);
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.prize_pool {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -97,16 +111,4 @@ button:focus {
     height: 100%;
     width: 70%;
     max-width: 70em;
-}
-
-.container {
-    background-color: rgba(255, 255, 255, 0.25);
-    background-blend-mode: color-dodge;
-    backdrop-filter: blur(25px);
-    padding: 1.4em;
-    border-radius: 3em;
-    box-shadow: 2px 2px 25px 20px outset rgb(0, 0, 0);
-    border: 2px solid rgb(61, 60, 60);
-    font-size: 1.1em;
-    text-align: center;
 }
