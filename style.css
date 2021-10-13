@@ -1,36 +1,68 @@
 
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 100%;
     margin: 0;
+    width:100%;
     background-color: rgba(122, 115, 96, 0.103);
     font-family: 'Sarabun', sans-serif;
     font-size: 18px;
-    background-image: url("source/New Folder/4biBZXqw.jpg small.jpg");
+    font-weight: bolder;
+    background-image: url("source/New Folder/King.jpg");
     background-repeat:no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-position:center;
+    background-size:cover;
     background-attachment: fixed;
+    background-blend-mode:difference;
+    background-color:rgb(0, 0, 0)
 }
 
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+
+  ::-webkit-scrollbar-track {
+    background: #000000;
+  }
+  
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgb(129 52 163);
+  }
+
+
+  ::-webkit-scrollbar-thumb:hover {
+    background:  rgb(68, 10, 94);
+  }
+
+ 
 button {
     background-color: transparent;
     color: rgb(0, 0, 0);
     border:none;
     font-size: 1em;
+    
 }
 
-button:hover {
+button:hover,
+button:focus {
     color: rgb(129 52 163);
-    transform:translateY(1px)
-}
+    transform:translateY(1px);
 
-.y.mandatory-scroll-snapping {
-    scroll-snap-type: y mandatory;
-  }
+}
 
 .navbar {
     background-color: rgb(255, 255, 255);
-    height:3em;
+    height:3.2em;
     position: sticky;
     margin-top: 1em;
     top: 0;
@@ -38,55 +70,96 @@ button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 2em;
+    padding: 1px 3%;
     box-shadow: 1px 1px 5px 5px  white;
+    z-index: 2;
+    width: 94%;
 }
 
 .logo {
-    font-size: 1.3em;
+    font-size: 1.4em;
     font-weight: bolder;
 }
 
 .nav {
     display: flex;
     justify-content: space-around;
-    width: 50%;
+    width: 45%;
+    max-width: 40em;
 }
 
-.main_page {
-    height: 100%;
+.home_page {
+    width: 80%;
 }
 
+.knight_left {
+    position: fixed;
+    height: auto;
+    bottom: 0;
+    left: 0;
+    width: 35%;
+    max-width: 40em; 
+    z-index: 2;  
+}
+
+.knight_right {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: auto;
+    width: 35%;
+    max-width: 40em; 
+    z-index: 2;
+}
 .about {
     height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
     font-weight: bold;
 }
 
 
-.prize_pool {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.NFT_Whales {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .container {
-    background-color: rgba(255, 255, 255, 0.753);
-    width: 80%;
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(25px);
+    width: auto;
+    max-width: 80em;
     padding: 1.4em;
     border-radius: 3em;
-    box-shadow: 1px 1px 30px 15px rgba(0, 0, 0, 0.582);
-    border: 1px solid rgba(0, 0, 0, 0.11);
+    box-shadow: 2px 2px 25px 20px outset rgb(0, 0, 0);
+    border: 2px solid rgb(61, 60, 60);
     font-size: 1.1em;
     text-align: center;
 }
+
+.signup_left {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50%;
+}
+
+.signup_right {
+
+}
+
+.pre_register {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0px 8%;
+}
+
+
+.containers {
+    border-radius: 3em;
+    background-color: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(15px);
+    box-shadow: 1px 1px 15px 10px rgba(0, 0, 0, 0.829);
+    border: 1px solid rgb(0, 0, 0);
+    text-align: center;
+    padding: 1em;
+}
+

@@ -1,0 +1,29 @@
+body {
+    background: rgb(115,0,176);
+background: linear-gradient(90deg, rgba(129,52,163,0.95) 0%, rgba(0,0,0,0.9) 5%, rgba(0,0,0,0.9) 95%, rgba(129,52,163,.95) 100%);
+display: flex;
+flex-direction: column;
+margin: 0px;
+height: 80vh;
+width: 100%;
+justify-content: space-evenly;
+}
+
+.NFT_page {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 80vh;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.753);
+    width: 80%;
+    padding: 1.4em;
+    border-radius: 3em;
+    box-shadow: 1px 1px 30px 15px rgba(0, 0, 0, 0.582);
+    border: 1px solid rgba(0, 0, 0, 0.11);
+    font-size: 1.1em;
+    text-align: center;
+}

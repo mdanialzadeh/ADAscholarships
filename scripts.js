@@ -1,10 +1,8 @@
 const About = document.querySelector(".about")
-const NFTs = document.querySelector(".NFT_page")
-const NFTwhales = document.querySelector(".NFT_Whales")
-
-
+const pre_register = document.querySelector(".pre_register") 
 const navButtons = document.querySelectorAll("button")
-
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxrbw8A_7ep-TUgjgZECnFQThPjhNaXrYvL0AHCwtHXUPdcmxHE/exec'
+const form = document.getElementById("preRegister")
 
 
 function buttons () {
@@ -13,18 +11,22 @@ function buttons () {
         About.scrollIntoView({behavior: "smooth"})
 })
 
-navButtons[2].addEventListener('click', () => {
-    hre
-})
-
-navButtons[3].addEventListener('click', () => {
-    NFTwhales.scrollIntoView({behavior: "smooth"})
-})
-
-navButtons[4].addEventListener('click', () => {
-    NFTs.scrollIntoView({behavior: "smooth"})
+navButtons[1].addEventListener('click', () => {
+    pre_register.scrollIntoView({behavior: "smooth"})
 })
 
 }
 
 buttons ()
+
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+        console.log('Success!', response)
+        form.reset();
+        })
+    .catch(error => console.error('Error!', error.message))
+})
