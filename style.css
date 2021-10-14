@@ -4,6 +4,7 @@ html {
     scroll-behavior: smooth;  
     font-family: 'Sarabun', sans-serif;
     font-size: 18px;
+    font-weight: bolder;
 }
 
 body {
@@ -20,6 +21,8 @@ body {
 a {
     text-decoration: inherit;
     color: inherit;
+    font-family: 'Sarabun', sans-serif;
+    font-weight: bold;
 }
 
 
@@ -48,6 +51,8 @@ button {
     color: rgb(0, 0, 0);
     border:none;
     font-size: 1em;
+    font-family: 'Sarabun', sans-serif;
+    font-weight: bold;
     
 }
 
@@ -55,6 +60,7 @@ button:hover,
 button:focus {
     color: rgb(129 52 163);
     transform:translateY(1px);
+    cursor: pointer;
 
 }
 
