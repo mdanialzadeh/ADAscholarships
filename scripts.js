@@ -33,7 +33,7 @@ function emailResult () {
 }
 
 form.addEventListener('submit', e => {
-  e.preventDefault()
+    if(!e.detail || e.detail == 1){e.preventDefault()
   disableBtn();
   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
     .then(response => {
@@ -42,4 +42,5 @@ form.addEventListener('submit', e => {
         emailResult();
         })
     .catch(error => enableBtn())
+    }
 })
