@@ -3,7 +3,7 @@ html {
     scroll-snap-stop: always; 
     scroll-behavior: smooth;  
     font-family: 'Sarabun', sans-serif;
-    font-size: calc(.3vw + .4vh + .3vmin);
+    font-size: calc(.2vw + .5vh + .3vmin);
     font-weight: bolder;
 }
 

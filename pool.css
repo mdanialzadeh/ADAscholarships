@@ -3,8 +3,9 @@ html {
     scroll-snap-stop: always; 
     scroll-behavior: smooth;  
     font-family: 'Sarabun', sans-serif;
-    font-size: 18px;
+    font-size: calc(.2vw + .5vh + .3vmin);
     background-size:100% 100%;
+    font-weight: bolder;
     background-image: url("source/New Folder/Knight.jpg") ;
     background-repeat: no-repeat;
     width: 100vw;
@@ -18,12 +19,15 @@ margin: 0px;
 height: 100vh;
 justify-content: space-evenly;
 align-items: center;
+font-weight: inherit;
 }
 
 
 a {
     text-decoration: inherit;
     color: inherit;
+    font-family: inherit;
+    font-weight: inherit
 }
 
 
@@ -47,11 +51,13 @@ a {
   }
 
  
-button {
+  button {
     background-color: transparent;
     color: rgb(0, 0, 0);
     border:none;
     font-size: 1em;
+    font-family: 'Sarabun', sans-serif;
+    font-weight: bold;
     
 }
 
@@ -59,13 +65,14 @@ button:hover,
 button:focus {
     color: rgb(129 52 163);
     transform:translateY(1px);
+    cursor: pointer;
 
 }
 
 .navbar {
     background-color: rgb(255, 255, 255);
     height:3em;
-    position: fixed;
+    position: sticky;
     margin-top: 1em;
     top: 0;
     color: rgb(129 52 163);
@@ -79,8 +86,9 @@ button:focus {
 }
 
 .logo {
-    font-size: 1.2em;
+    font-size: 1.6em;
     font-weight: bolder;
+    font-family: inherit;
 }
 
 .nav {
@@ -88,6 +96,7 @@ button:focus {
     justify-content: space-around;
     width: 45%;
     max-width: 40em;
+    font-size: 1.2em;
 }
 
 .container {
@@ -99,7 +108,6 @@ button:focus {
     border-radius: 3em;
     box-shadow: 2px 2px 25px 20px outset rgb(0, 0, 0);
     border: 2px solid rgb(61, 60, 60);
-    font-size: 1.1em;
     text-align: center;
 }
 
@@ -111,4 +119,5 @@ button:focus {
     height: 100%;
     width: 70%;
     max-width: 70em;
+    font-size: 1.3em;
 }
