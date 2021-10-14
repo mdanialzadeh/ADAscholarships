@@ -3,7 +3,7 @@ html {
     scroll-snap-stop: always; 
     scroll-behavior: smooth;  
     font-family: 'Sarabun', sans-serif;
-    font-size: 18px;
+    font-size: calc(.3vw + .4vh + .3vmin);
     font-weight: bolder;
 }
 
@@ -14,15 +14,15 @@ body {
     height: 100%;
     margin: 0;
     width:100%;
-    font-weight: bolder;
+    font-weight: inherit;
     background-color: black;
 }
 
 a {
     text-decoration: inherit;
     color: inherit;
-    font-family: 'Sarabun', sans-serif;
-    font-weight: bold;
+    font-family: inherit;
+    font-weight: inherit
 }
 
 
@@ -81,8 +81,9 @@ button:focus {
 }
 
 .logo {
-    font-size: 1.2em;
+    font-size: 1.6em;
     font-weight: bolder;
+    font-family: inherit;
 }
 
 .nav {
@@ -90,6 +91,7 @@ button:focus {
     justify-content: space-around;
     width: 45%;
     max-width: 40em;
+    font-size: 1.2em;
 }
 
 .home_page {
@@ -128,10 +130,11 @@ button:focus {
     height: 100vh;
     display: flex;
     align-items: center;
-    font-weight: bold;
+    font-weight: bolder;
+    font-size: 1.4em;
     scroll-snap-align: center;
     width: 80%;
-    max-width: 80em;
+    max-width: 60em;
 }
 
 
@@ -144,7 +147,6 @@ button:focus {
     border-radius: 3em;
     box-shadow: 2px 2px 25px 20px outset rgb(0, 0, 0);
     border: 2px solid rgb(61, 60, 60);
-    font-size: 1.1em;
     text-align: center;
 }
 
@@ -156,7 +158,8 @@ button:focus {
     flex-direction: column;
     scroll-snap-align: center;
     width: 80%;
-    max-width: 80em;
+    max-width: 60em;
+    font-size: 1.3em;
 }
 
 .signup_top {
@@ -186,6 +189,7 @@ button:focus {
     border: none;
     padding: 10px;
     border-radius: 10px 10px;
+    text-align: center;
     
 }
 
@@ -202,4 +206,5 @@ button:focus {
     text-align: center;
 
 }
+
 
